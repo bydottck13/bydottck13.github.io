@@ -1,6 +1,23 @@
 /* CSS3 practice from coursera courses */
+/* 
+***************************
+Color is from https://material.io/guidelines/style/color.html#color-color-palette 
+
+Some other desirable CSS examples: http://www.csszengarden.com/
+***************************
+*/
 
 h1{
-	color: #448AFF;
+	color: #2962FF; /* Blue A700 */
+	font-family: Courier, Impact, Arial;
+	font-variant: small-caps;
+}
+
+p{
+	text-align: justify;
+}
+
+nav{
+	text-align: center;
 }
 
