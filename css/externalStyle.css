@@ -7,8 +7,19 @@ Some other desirable CSS examples: http://www.csszengarden.com/
 ***************************
 */
 
+body{
+	background: #F5F5F5; /* Grey 100 */
+	font-size: 120%;
+	margin: 2% 10%;
+}
+
+header{
+	background: #3F51B5; /* Indigo 500 */
+	text-align: center;
+}
+
 h1{
-	color: #2962FF; /* Blue A700 */
+	color: #FFFFFF; /* White */
 	font-family: Courier, Impact, Arial;
 	font-variant: small-caps;
 }
@@ -19,5 +30,48 @@ p{
 
 nav{
 	text-align: center;
+	font-variant: small-caps;
+	font-size: 150%;
+	font-family: Arial, "Time New Roman", serif;
 }
 
+table{
+	border-width: 1px 2px;
+	margin: 3px;
+	padding: 3px;
+	/*border: outset; dotted, dashed, solid, double groove, ridge*/
+	/*border-width: 3px 10px;  2 values: top/bottom right/left*/
+	/*border-width: 3px 10px 20px;  3 values: top right/left bottom*/
+	/*border-width: 3px 10px 20px 1px;  4 values: top right bottom left*/
+}
+
+ol{
+	list-style-type: upper-roman;
+}
+
+.a1{
+	display: inline-block;
+	font-weight: bold;
+	color: #FFFFFF;
+	background: #3F51B5; /* Indigo 500 */
+	width: 200px;
+	text-align: center;
+	padding: 4px;
+	text-decoration: none;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+
+.a1:hover{
+	background: #B3B3B3;
+	color: #0006CC;
+}
+
+.al:focus{
+	background: #B3B3B3;
+	color: #0006CC;
+}
+
+.a1:active{
+	border: 3px solid #000000;
+}
