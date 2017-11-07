@@ -8,14 +8,18 @@ Some other desirable CSS examples: http://www.csszengarden.com/
 */
 
 body{
-	background: #F5F5F5; /* Grey 100 */
 	font-size: 120%;
 	margin: 2% 20%;
+	background: #F5F5F5; /* Grey 100 */
 }
 
 header{
-	background: #3F51B5; /* Indigo 500 */
 	text-align: center;
+	background: #3F51B5; /* Indigo 500 */
+	background: -webkit-linear-gradient(bottom right, #3F51B5, #9FA8DA); /* Indigo 200 */
+	background: -moz-linear-gradient(bottom right, #3F51B5, #9FA8DA);
+	background: -o-linear-gradient(bottom right, #3F51B5, #9FA8DA);
+	background: linear-gradient(to bottom right, #3F51B5, #9FA8DA);
 }
 
 h1{
@@ -26,13 +30,6 @@ h1{
 
 p{
 	text-align: justify;
-}
-
-nav{
-	text-align: center;
-	font-variant: small-caps;
-	font-size: 150%;
-	font-family: Arial, "Time New Roman", serif;
 }
 
 table{
@@ -49,29 +46,52 @@ ol{
 	list-style-type: upper-roman;
 }
 
-.a1{
-	display: inline-block;
-	font-weight: bold;
+figure img{
+	width: 20%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}
+
+/* --- footer --- */
+
+nav{
+	text-align: center;
+	font-variant: small-caps;
+	font-size: 150%;
+	font-family: Arial, "Time New Roman", serif;
+}
+
+nav a{
+	text-align: center;
 	color: #FFFFFF;
 	background: #3F51B5; /* Indigo 500 */
-	width: 200px;
-	text-align: center;
-	padding: 4px;
+	display: inline-block;
+	font-weight: bold;
+	width: 20%;
 	text-decoration: none;
 	margin: 0 auto;
-	margin-top: 10px;
+	font-family: Courier, Impact, Arial;
 }
 
-.a1:hover{
-	background: #B3B3B3;
-	color: #0006CC;
+nav a:hover{
+	background: #BDBDBD; /* Grey 400 */
+	color: #1565C0; /* Blue 800 */
 }
 
-.al:focus{
-	background: #B3B3B3;
-	color: #0006CC;
+nav a:focus{
+	background: #BDBDBD; /* Grey 400 */
+	color: #1565C0; /* Blue 800 */
 }
 
-.a1:active{
+nav a:active{
 	border: 3px solid #000000;
+}
+
+nav a.active{
+	background-color: #EEEEEE; /* Grey 200 */
+	color: #000000;
+	border: 3px solid #000000;
+}
+
+#copyRight{
+	text-align: center;
 }
