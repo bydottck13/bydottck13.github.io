@@ -5,14 +5,15 @@
 	<title>Personal</title>
 	<link rel="icon" type="image/png" href="https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png" />
 	<link rel="stylesheet" href="css/main.css" />
+	<script src="js/lightBox.js"></script>
 </head>
 <body>
 	<header>
 		<h1>Personal</h1>
 	</header>
 	<main>
-		<section>
-			<h2>Traveler</h2>
+		<article>
+			<h1>Traveler</h1>
 			<p>I have been to the countries below. However, I still desire to explore our world more.</p>
 			<ul>
 				<li>Japan</li>
@@ -21,35 +22,100 @@
 				<li>Malaysia</li>
 				<li>Hong Kong, Macau</li>
 			</ul>
-		</section>
+			<div class="row">
+				<div class="column">
+					<img src="imgs/Danboard.JPG" onclick="openModal();currentSlide(1)" class="hover-shadow">
+				</div>
+				<div class="column">
+					<img src="imgs/Danboard.JPG" onclick="openModal();currentSlide(2)" class="hover-shadow">
+				</div>
+				<div class="column">
+					<img src="imgs/Danboard.JPG" onclick="openModal();currentSlide(3)" class="hover-shadow">
+				</div>
+				<div class="column">
+					<img src="imgs/Danboard.JPG" onclick="openModal();currentSlide(4)" class="hover-shadow">
+				</div>
+			</div>
+
+			<!--Modal Image-->
+			<div id="myModal" class="modal">
+				<span class="close cursor" onclick="closeModal()">&times;</span>
+				<div class="modal-content">
+
+					<div class="mySlides">
+						<div class="numbertext">1 / 4</div>
+						<img src="imgs/Danboard.JPG">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">2 / 4</div>
+						<img src="imgs/Danboard.JPG">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">3 / 4</div>
+						<img src="imgs/Danboard.JPG">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">4 / 4</div>
+						<img src="imgs/Danboard.JPG">
+					</div>
+
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+					<div class="caption-container">
+						<p id="caption"></p>
+					</div>
+
+					<div class="column">
+						<img class="demo" src="imgs/Danboard.JPG" onclick="currentSlide(1)" alt="Nature">
+					</div>
+
+					<div class="column">
+						<img class="demo" src="imgs/Danboard.JPG" onclick="currentSlide(2)" alt="Trolltunga">
+					</div>
+
+					<div class="column">
+						<img class="demo" src="imgs/Danboard.JPG" onclick="currentSlide(3)" alt="Mountains">
+					</div>
+
+					<div class="column">
+						<img class="demo" src="imgs/Danboard.JPG" onclick="currentSlide(4)" alt="Lights">
+					</div>
+				</div>
+			</div>
+		</article>
 		<hr><!--Horizontal Line-->
-		<section>
-			<h2>Runner</h2>
-			<ul>
-				<li>SEIKO Supper Runner (12.5km/01:03:30), <time>2014-09-14</time></li>
-				<li>Maokong Run (21km/02:17:40), <time>2014-10-26</time></li>
-				<li>Taipei Fubon Marathon (21km/02:13:28), <time>2014-12-21</time></li>
-				<li>Cherry Blossom Blvd. Marathon (42.195km/05:51:29), <time>2015-02-01</time></li>
-				<li>Taipei Expressway Marathon (21km/02:13:51), <time>2015-03-15</time></li>
-				<li>Taipei Starry Night Marathon (43.2km/05:52:30), <time>2015-06-13</time></li>
-				<li>SEIKO Supper Runner (12.5km/01:05:43), <time>2015-09-20</time></li>
-			</ul>
-		</section>
+		<article>
+			<h1>Runner</h1>
+			<table>
+				<tr><th>Date</th><th>Activities</th><th>Distance(km)</th><th>Net Time</th></tr>
+				<tr><td><time>2014-09-14</time></td><td>SEIKO Supper Runner</td><td>12.5</td><td>01:03:30</td></tr>
+				<tr><td><time>2014-10-26</time></td><td>Maokong Run</td><td>21</td><td>02:17:40</td></tr>
+				<tr><td><time>2014-12-21</time></td><td>Taipei Fubon Marathon</td><td>21</td><td>02:13:28</td></tr>
+				<tr><td><time>2015-02-01</time></td><td>Cherry Blossom Blvd. Marathon</td><td>42.195</td><td>05:51:29</td></tr>
+				<tr><td><time>2015-03-15</time></td><td>Taipei Expressway Marathon</td><td>21</td><td>02:13:51</td></tr>
+				<tr><td><time>2015-06-13</time></td><td>Taipei Starry Night Marathon</td><td>43.2</td><td>05:52:30</td></tr>
+				<tr><td><time>2015-09-20</time></td><td>SEIKO Supper Runner</td><td>12.5</td><td>01:05:43</td></tr>
+			</table>
+		</article>
 		<hr><!--Horizontal Line-->
-		<section>
-			<h2>Languages</h2>
+		<article>
+			<h1>Languages</h1>
 			<p>I am learning the languages below, and I am willing to practice them with any ways.</p>
 			<ul>
 				<li>English</li>
 				<li>Español</li>
 				<li>日本語</li>
 			</ul>
-		</section>
+		</article>
 		<hr><!--Horizontal Line-->
-		<section>
-			<h2>Blogger</h2>
+		<article>
+			<h1>Blogger</h1>
 			<p>This <a href="https://bryceknowhow.blogspot.tw" title="Stay Hungry, Stay Foolish">Blogspot</a> is an area that I recorded some significant notes from my work or life. These have profound impacts on me, and I have been doing this since 2013.</p>
-		</section>
+		</article>
 	</main>
 	<hr><!--Horizontal Line-->
 	<footer>
