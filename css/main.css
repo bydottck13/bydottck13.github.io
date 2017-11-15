@@ -294,7 +294,7 @@ nav a.active{
 
 /* --- mySidenav --- */
 #mySidenav a{
-	position: absolute;
+	position: fixed;
 	left: -110px;
 	transition: .3s;
 	padding: 10px;
@@ -308,7 +308,7 @@ nav a.active{
 }
 
 #mySidenav span{
-	position: absolute;
+	position: fixed;
 	left: 0px;
 	width: 25px;
 	border-radius: 0 5px 5px 0;
