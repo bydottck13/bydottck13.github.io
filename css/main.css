@@ -7,6 +7,10 @@ Some other desirable CSS examples: http://www.csszengarden.com/
 ***************************
 */
 
+html{
+	width: 100vw;
+}
+
 html, body{
 	background: #F5F5F5; /* Grey 100 */
 }
@@ -14,14 +18,7 @@ html, body{
 /* mobile layout first */
 body{
 	font-size: 120%;
-	margin: 2% 2%;
-}
-
-@media all and (min-width: 780px) {
-	body{
-		font-size: 120%;
-		margin: 2% 20%;
-	}
+	margin: 2% 5%;
 }
 
 header{
@@ -254,6 +251,7 @@ nav{
 	font-variant: small-caps;
 	font-size: 150%;
 	font-family: Arial, "Time New Roman", serif;
+	display: none;
 }
 
 nav a{
@@ -296,4 +294,59 @@ nav a.active{
 
 #copyRight{
 	text-align: center;
+}
+
+/* --- mySidenav --- */
+#mySidenav a{
+	position: absolute;
+	left: -110px;
+	transition: .3s;
+	padding: 10px;
+	width: 125px;
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
+	border-radius: 0 5px 5px 0;
+	text-align: center;
+	font-variant: small-caps;
+}
+
+#mySidenav a:hover{
+	left: 0;
+}
+
+#home {
+	top: 20px;
+	background-color: #00C853; /* Green A700 */
+
+}
+
+#about{
+	top: 80px;
+	background-color: #2962FF; /* Blue A700 */
+}
+
+#publication{
+	top: 140px;
+	background-color: #D50000; /* Red A700 */
+}
+
+#personal{
+	top: 200px;
+	background-color: #424242; /* #424242 800 */
+}
+
+@media all and (min-width: 780px) and (orientation: landscape){
+	body{
+		font-size: 120%;
+		margin: 2% 20%;
+	}
+
+	nav{
+		display: inline;
+	}
+
+	#mySidenav{
+		display: none;
+	}	
 }
