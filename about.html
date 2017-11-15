@@ -8,8 +8,10 @@
 </head>
 <body>
 	<div id="mySidenav" class="sidenav">
+		<span id="menu" onclick="openNav()">&#9776;</span>
+		<span id="close" onclick="closeNav()">&times;</span>
 		<a href="index.html" id="home">Home</a>
-		<a href="about.html" id="about">About</a>
+		<a href="about.html" id="about" class = "active">About</a>
 		<a href="publication.html" id="publication">Publication</a>
 		<a href="personal.html" id="personal">Personal</a>
 	</div>
@@ -67,5 +69,6 @@
 		</nav>
 		<p id="copyRight">&copy; 2017 by Bo-Rong Chen</p>
 	</footer>
+	<script src="js/sideNavigation.js"></script>
 </body>
 </html>

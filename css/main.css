@@ -7,10 +7,6 @@ Some other desirable CSS examples: http://www.csszengarden.com/
 ***************************
 */
 
-html{
-	width: 100vw;
-}
-
 html, body{
 	background: #F5F5F5; /* Grey 100 */
 }
@@ -311,29 +307,53 @@ nav a.active{
 	font-variant: small-caps;
 }
 
+#mySidenav span{
+	position: absolute;
+	left: 0px;
+	width: 25px;
+	border-radius: 0 5px 5px 0;
+	text-align: center;
+	font-size: 20px;
+	cursor: pointer;
+}
+
 #mySidenav a:hover{
 	left: 0;
 }
 
-#home {
-	top: 20px;
-	background-color: #00C853; /* Green A700 */
+#menu{
+	top: 25px;
+	background-color: #ECEFF1;
+}
 
+#close{
+	display: none;
+}
+
+#home{
+	top: 85px;
+	background-color: #00C853; /* Green A700 */
 }
 
 #about{
-	top: 80px;
+	top: 145px;
 	background-color: #2962FF; /* Blue A700 */
 }
 
 #publication{
-	top: 140px;
+	top: 205px;
 	background-color: #D50000; /* Red A700 */
 }
 
 #personal{
-	top: 200px;
+	top: 265px;
 	background-color: #424242; /* #424242 800 */
+}
+
+#mySidenav a.active{
+	background-color:#F5F5F5; /* Grey 100 */
+	color: #000000;
+	border: 3px solid #000000;
 }
 
 @media all and (min-width: 780px) and (orientation: landscape){
@@ -343,7 +363,7 @@ nav a.active{
 	}
 
 	nav{
-		display: inline;
+		display: block;
 	}
 
 	#mySidenav{
