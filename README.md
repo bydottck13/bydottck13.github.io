@@ -19,6 +19,6 @@ This is my profile blog with HTML5 + CSS3 + JavaScript. The implement is based o
 RWD is the mobile first! 
 
 ## Reference
-[Am I responsive?](http://ami.responsivedesign.is/#)
-[Bootstrap](http://getbootstrap.com/)
-[Markup Validation Service](https://validator.w3.org/)
+ * [Am I responsive?](http://ami.responsivedesign.is/#)
+ * [Bootstrap](http://getbootstrap.com/)
+ * [Markup Validation Service](https://validator.w3.org/)
