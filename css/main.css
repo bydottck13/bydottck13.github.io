@@ -36,20 +36,33 @@ article p{
 	text-align: justify;
 }
 
-div img{
-	width: 100%;
+/* --- Responsive Testimonials --- */
+.container{
+	border: 2px solid #ccc;
+	background-color: #eee;
+	border-radius: 5px;
+	padding: 16px;
+	margin: 16px 0;
+	text-align: center;
 }
 
-div.polaroid{
-	width: 50%;
-	background-color: white;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	margin-bottom: 25px;
+.container::after{
+	content: "";
+	clear: both;
+	display: table;
 }
 
-div.container{
-	text-align: right;
-	padding: 10px 20px;
+.container img{
+	margin: auto;
+	float: none;
+	border-radius: 50%;
+	display: block;
+	width: 110px;
+}
+
+.container span{
+	font-size: 20px;
+	margin-right: 15px;
 }
 
 figure img{
@@ -76,12 +89,12 @@ th, td{
 	border-bottom: 1px solid #ddd;
 }
 
-tr:hover{
-	background-color: #EEEEEE; /* Grey 200 */
+th{
+	font-variant: small-caps;
 }
 
-ol{
-	list-style-type: upper-roman;
+tr:hover{
+	background-color: #EEEEEE; /* Grey 200 */
 }
 
 li:nth-child(odd){
@@ -105,6 +118,48 @@ li:nth-child(odd){
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+/* --- Accordion --- */
+button.accordion{
+	background-color: #eee;
+	color: #444;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 15px;
+	transition: .4s;
+}
+
+button.accordion.active, button.accordion:hover{
+	background-color: #ccc;
+}
+
+button.accordion:after{
+	content: '\002B';
+	color: #777;
+	font-weight: bold;
+	float: right;
+	margin-left: 5px;
+}
+
+button.accordion.active:after{
+	content: "\2212";
+}
+
+div.panel{
+	padding: 0 18px;
+	background-color: #F5F5F5; /* Grey 100 */
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height .2s ease-out;
+}
+
+div.panel p{
+	text-align: justify;
+}
+
 /* --- LightBox --- */
 * {
 	box-sizing: border-box;
@@ -126,6 +181,10 @@ li:nth-child(odd){
 .column{
 	float: left;
 	width: 25%;
+}
+
+.column img{
+	width: 100%;
 }
 
 /* The Modal (background) */
@@ -176,7 +235,7 @@ li:nth-child(odd){
 
 .mySlides img{
 	width: 100%;
-	margin: -150px 0 0 0;
+	margin: -10% 0 0 0;
 }
 
 /* Next & previous buttons */
@@ -225,19 +284,19 @@ li:nth-child(odd){
 	color: white;
 }
 
-img.demo{
+.column img.demo{
 	opacity: 0.6;
 }
 
-img.active, img.demo:hover{
+.column img.active, .column img.demo:hover{
 	opacity: 1;
 }
 
-img.hover-shadow{
+.column img.hover-shadow{
 	transition: .3s;
 }
 
-img.hover-shadow:hover{
+.column img.hover-shadow:hover{
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -364,7 +423,8 @@ nav a.active{
 	border: 3px solid #000000;
 }
 
-@media all and (min-width: 780px) and (orientation: landscape){
+/* Desktops: 992px to 1199px, or using (orientation: landscape/portrait) */
+@media all and (min-width: 992px){
 	body{
 		font-size: 120%;
 		margin: 2% 20%;
@@ -376,5 +436,16 @@ nav a.active{
 
 	#mySidenav{
 		display: none;
-	}	
+	}
+
+	/* --- Responsive Testimonials --- */
+	.container{
+		text-align: left;
+	}
+
+	.container img{
+		float: left;
+		margin-right: 20px;
+		display: inline;
+	}
 }
