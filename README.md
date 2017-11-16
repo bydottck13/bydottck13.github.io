@@ -1,5 +1,5 @@
 # bydottck13.github.io
-This is my profile blog with HTML5+CSS3+JavaScript. The implement is based on the classes from Coursera.
+This is my profile blog with HTML5 + CSS3 + JavaScript. The implement is based on the classes from Coursera.
 
 ## HTML5
 [Introduction to HTML5](https://www.coursera.org/learn/html)
@@ -16,3 +16,9 @@ This is my profile blog with HTML5+CSS3+JavaScript. The implement is based on th
  * `Adaptive Design (dynamic serving)` - using multiple versions of a page
  * `Sepatate Mobile Site (.m)` - a separate page URL for the mobile site
 
+RWD is the mobile first! 
+
+## Reference
+[Am I responsive?](http://ami.responsivedesign.is/#)
+[Bootstrap](http://getbootstrap.com/)
+[Markup Validation Service](https://validator.w3.org/)
