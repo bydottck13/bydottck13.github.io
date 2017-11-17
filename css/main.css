@@ -155,6 +155,37 @@ div.panel p{
 	text-align: justify;
 }
 
+/* --- Protfolio --- */
+.protfolio-row{
+	margin: 10px -16px;
+}
+
+.protfolio-row,
+.protfolio-row > .protfolio-column{
+	padding: 8px;
+}
+
+.protfolio-column{
+	float: left;
+	width: 33.33%;
+	display: none;
+}
+
+.protfolio-row:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.protfolio-content{
+	background-color: white;
+	padding: 10px;
+}
+
+.protfolio-show{
+	display: block;
+}
+
 /* --- LightBox --- */
 * {
 	box-sizing: border-box;
@@ -299,7 +330,7 @@ div.panel p{
 nav{
 	text-align: center;
 	font-variant: small-caps;
-	font-size: 150%;
+	font-size: 120%;
 	font-family: Arial, "Time New Roman", serif;
 	display: none;
 }
@@ -310,7 +341,7 @@ nav a{
 	background: #3F51B5; /* Indigo 500 */
 	display: inline-block;
 	font-weight: bold;
-	width: 20%;
+	width: 15%;
 	min-width: 140px;
 	text-decoration: none;
 	margin: 0 auto;
@@ -401,9 +432,14 @@ nav a.active{
 	background-color: #D50000; /* Red A700 */
 }
 
-#personal{
+#portfolio{
 	top: 285px;
-	background-color: #424242; /* #424242 800 */
+	background-color: #FFAB00; /* Amber A700 */
+}
+
+#personal{
+	top: 350px;
+	background-color: #424242; /* Grey 800 */
 }
 
 #mySidenav a.active{

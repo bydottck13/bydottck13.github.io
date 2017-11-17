@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset = "UTF-8">
+	<title>Portfolio</title>
+	<link rel="icon" type="image/png" href="https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png" />
+	<link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+	<div id="mySidenav" class="sidenav">
+		<span id="menu" onclick="openNav()">&#9776;</span>
+		<span id="close" onclick="closeNav()">&times;</span>
+		<a href="index.html" id="home">Home</a>
+		<a href="about.html" id="about">About</a>
+		<a href="publication.html" id="publication">Publication</a>
+		<a href="portfolio.html" id="portfolio" class = "active">Portfolio</a>
+		<a href="personal.html" id="personal">Personal</a>
+	</div>
+	<header>
+		<h1>Portfolio</h1>
+	</header>
+	<main>
+		<article>
+			<input type="radio" onclick="filterSelection('protfolio-all')" name="category" checked> Show all
+			<input type="radio" onclick="filterSelection('protfolio-nature')" name="category"> Nature
+			<input type="radio" onclick="filterSelection('protfolio-cars')" name="category"> Cars
+			<input type="radio" onclick="filterSelection('protfolio-people')" name="category"> People
+
+			<!-- Protfolio Gallery Grid -->
+			<div class="protfolio-row">
+				<div class="protfolio-column protfolio-nature">
+					<div class="protfolio-content">
+						<img src="imgs/Danboard.JPG" alt="Mountains" style="width:100%">
+						<h4>Mountains</h4>
+						<p>Loren ipsum dolor...</p>
+					</div>
+				</div>
+				<div class="protfolio-column protfolio-nature">
+					<div class="protfolio-content">
+						<img src="imgs/Danboard.JPG" alt="Mountains" style="width:100%">
+						<h4>Mountains</h4>
+						<p>Loren ipsum dolor...</p>
+					</div>
+				</div>
+				<div class="protfolio-column protfolio-nature">
+					<div class="protfolio-content">
+						<img src="imgs/Danboard.JPG" alt="Mountains" style="width:100%">
+						<h4>Mountains</h4>
+						<p>Loren ipsum dolor...</p>
+					</div>
+				</div>
+
+				<div class="protfolio-column protfolio-cars">
+					<div class="protfolio-content">
+						<img src="imgs/Danboard.JPG" alt="Mountains" style="width:100%">
+						<h4>Mountains</h4>
+						<p>Loren ipsum dolor...</p>
+					</div>
+				</div>
+				<div class="protfolio-column protfolio-cars">
+					<div class="protfolio-content">
+						<img src="imgs/Danboard.JPG" alt="Mountains" style="width:100%">
+						<h4>Mountains</h4>
+						<p>Loren ipsum dolor...</p>
+					</div>
+				</div>
+				<div class="protfolio-column protfolio-cars">
+					<div class="protfolio-content">
+						<img src="imgs/Danboard.JPG" alt="Mountains" style="width:100%">
+						<h4>Mountains</h4>
+						<p>Loren ipsum dolor...</p>
+					</div>
+				</div>
+
+				<div class="protfolio-column protfolio-people">
+					<div class="protfolio-content">
+						<img src="imgs/Danboard.JPG" alt="Mountains" style="width:100%">
+						<h4>Mountains</h4>
+						<p>Loren ipsum dolor...</p>
+					</div>
+				</div>
+				<div class="protfolio-column protfolio-people">
+					<div class="protfolio-content">
+						<img src="imgs/Danboard.JPG" alt="Mountains" style="width:100%">
+						<h4>Mountains</h4>
+						<p>Loren ipsum dolor...</p>
+					</div>
+				</div>
+				<div class="protfolio-column protfolio-people">
+					<div class="protfolio-content">
+						<img src="imgs/Danboard.JPG" alt="Mountains" style="width:100%">
+						<h4>Mountains</h4>
+						<p>Loren ipsum dolor...</p>
+					</div>
+				</div>
+			</div>
+		</article>
+	</main>
+	<hr><!--Horizontal Line-->
+	<footer>
+		<nav>
+			<a href="index.html">Home</a> | 
+			<a href="about.html">About</a> |
+			<a href="publication.html">Publication</a> |
+			<a href="portfolio.html" class = "active">Portfolio</a> |
+			<a href="personal.html">Personal</a>
+		</nav>
+		<p id="copyRight">&copy; 2017 by Bo-Rong Chen</p>
+	</footer>
+	<script src="js/sideNavigation.js"></script>
+	<script src="js/portfolio.js"></script>
+</body>
+</html>
