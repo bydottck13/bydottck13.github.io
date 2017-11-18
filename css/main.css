@@ -449,7 +449,7 @@ nav a.active{
 }
 
 /* Desktops: 992px to 1199px, or using (orientation: landscape/portrait) */
-@media all and (min-width: 992px){
+@media all and (min-width: 992px) and (orientation: landscape) {
 	body{
 		font-size: 120%;
 		margin: 2% 20%;
