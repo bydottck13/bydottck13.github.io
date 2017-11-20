@@ -10,36 +10,48 @@
 	<div id="mySidenav" class="sidenav">
 		<span id="menu" onclick="openNav()">&#9776;</span>
 		<span id="close" onclick="closeNav()">&times;</span>
-		<a href="index.html" id="home" class = "active">Home</a>
+		<a href="index.html" id="home" class="active">Home</a>
 		<a href="about.html" id="about">About</a>
 		<a href="publication.html" id="publication">Publication</a>
 		<a href="portfolio.html" id="portfolio">Portfolio</a>
 		<a href="personal.html" id="personal">Personal</a>
 	</div>
-	<header>
-		<h1>Hello! ¡Hola!</h1>
-	</header>
-	<main>
-		<article>
-			<h1>Introduction</h1>
-			<div class="container">
-				<img src="imgs/Danboard.JPG" alt="Profile Picture">
-				<p><span>Bryce Chen.</span> Software Engineer at PPPP.</p>
-				<p>Stay Hungry, Stay Foolish</p>
-			</div>
-		</article>
-	</main>
-	<hr><!--Horizontal Line-->
-	<footer>
-		<nav>
-			<a href="index.html" class = "active">Home</a> | 
-			<a href="about.html">About</a> |
-			<a href="publication.html">Publication</a> |
-			<a href="portfolio.html">Portfolio</a> |
-			<a href="personal.html">Personal</a>
-		</nav>
-		<p id="copyRight">&copy; 2017 by Bo-Rong Chen</p>
-	</footer>
+	<div id="myTopnav" class="topnav">
+		<a href="index.html" class="active">Home</a>
+		<a href="about.html">About</a>
+		<a href="publication.html">Publication</a>
+		<a href="portfolio.html">Portfolio</a>
+		<a href="personal.html">Personal</a>
+		<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myTopnav()">&#9776;</a>
+	</div>
+
+	<div class="content">
+		<header>
+			<h1>Hello! ¡Hola!</h1>
+		</header>
+		<main>
+			<article>
+				<h1>Introduction</h1>
+				<div class="container">
+					<img src="imgs/Danboard.JPG" alt="Profile Picture">
+					<p><span>Bryce Chen.</span> Software Engineer at PPPP.</p>
+					<p>Stay Hungry, Stay Foolish</p>
+				</div>
+			</article>
+		</main>
+		<hr><!--Horizontal Line-->
+		<footer>
+			<nav>
+				<a href="index.html" class = "active">Home</a> | 
+				<a href="about.html">About</a> |
+				<a href="publication.html">Publication</a> |
+				<a href="portfolio.html">Portfolio</a> |
+				<a href="personal.html">Personal</a>
+			</nav>
+			<p id="copyRight">&copy; 2017 by Bo-Rong Chen</p>
+		</footer>
+	</div>
 	<script src="js/sideNavigation.js"></script>
+	<script src="js/myTopnav.js"></script>
 </body>
 </html>

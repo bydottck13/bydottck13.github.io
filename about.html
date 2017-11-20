@@ -11,55 +11,67 @@
 		<span id="menu" onclick="openNav()">&#9776;</span>
 		<span id="close" onclick="closeNav()">&times;</span>
 		<a href="index.html" id="home">Home</a>
-		<a href="about.html" id="about" class = "active">About</a>
+		<a href="about.html" id="about" class="active">About</a>
 		<a href="publication.html" id="publication">Publication</a>
 		<a href="portfolio.html" id="portfolio">Portfolio</a>
 		<a href="personal.html" id="personal">Personal</a>
 	</div>
-	<header>
-		<h1>About</h1>
-	</header>
-	<main>
-		<article>
-			<!--Simple Table-->
-			<table>
-				<tr><th>Education</th></tr>
-				<tr><td>
-					<button class="accordion">National Taiwan University (NTU), <i>Master of Science</i></button>
-					<div class="panel">
-						<p>I am a tester. I am a tester. I am a tester. I am a tester. I am a tester. I am a tester. I am a tester. I am a tester. I am a tester. I am a tester. I am a tester. I am a tester. I am a tester. I am a tester. I am a tester. I am a tester. I am a tester. I am a tester. I am a tester. I am a tester.</p>
-					</div>
+	<div id="myTopnav" class="topnav">
+		<a href="index.html">Home</a>
+		<a href="about.html" class="active">About</a>
+		<a href="publication.html">Publication</a>
+		<a href="portfolio.html">Portfolio</a>
+		<a href="personal.html">Personal</a>
+		<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myTopnav()">&#9776;</a>
+	</div>
 
-					<button class="accordion">National Taiwan University of Science and Technology (Taiwan Tech), <i>Bachelor of Science</i></button>
-					<div class="panel">
-						<p>I am a tester 2. I am a tester 2. I am a tester 2. I am a tester 2. I am a tester 2. I am a tester 2. I am a tester 2. I am a tester 2. I am a tester 2. I am a tester 2. I am a tester 2. I am a tester 2. I am a tester 2. I am a tester 2. I am a tester 2.</p>
-					</div>
-				</td></tr>
-				<tr><th>Work Experience</th></tr>
-				<tr><td>ttttttttt</td></tr>
-				<tr><th>Teaching Experience</th></tr>
-				<tr><td>tttttttt</td></tr>
-				<tr><th>Research Interests</th></tr>
-				<tr><td>Embedded Systems, Sensor Networks, Wireless Networks, and Signal Processing</td></tr>
-				<tr><th>Awords Wards &amp; Honors</th></tr>
-				<tr><td>GG<br/>GG<br/></td></tr>
-				<tr><th>Related Skills</th></tr>
-				<tr><td>GG<br/>GG<br/></td></tr>
-			</table>
-		</article>
-	</main>
-	<hr><!--Horizontal Line-->
-	<footer>
-		<nav>
-			<a href="index.html">Home</a> | 
-			<a href="about.html" class = "active">About</a> |
-			<a href="publication.html">Publication</a> |
-			<a href="portfolio.html">Portfolio</a> |
-			<a href="personal.html">Personal</a>
-		</nav>
-		<p id="copyRight">&copy; 2017 by Bo-Rong Chen</p>
-	</footer>
+	<div class="content">
+		<header>
+			<h1>About</h1>
+		</header>
+		<main>
+			<article>
+				<!--Simple Table-->
+				<table>
+					<tr><th>Education</th></tr>
+					<tr><td>
+						<button class="accordion">National Taiwan University (NTU), <i>Master of Science</i></button>
+						<div class="panel">
+							<p>I am a tester. I am a tester. I am a tester. I am a tester. I am a tester. I am a tester. I am a tester. I am a tester. I am a tester. I am a tester. I am a tester. I am a tester. I am a tester. I am a tester. I am a tester. I am a tester. I am a tester. I am a tester. I am a tester. I am a tester.</p>
+						</div>
+
+						<button class="accordion">National Taiwan University of Science and Technology (Taiwan Tech), <i>Bachelor of Science</i></button>
+						<div class="panel">
+							<p>I am a tester 2. I am a tester 2. I am a tester 2. I am a tester 2. I am a tester 2. I am a tester 2. I am a tester 2. I am a tester 2. I am a tester 2. I am a tester 2. I am a tester 2. I am a tester 2. I am a tester 2. I am a tester 2. I am a tester 2.</p>
+						</div>
+					</td></tr>
+					<tr><th>Work Experience</th></tr>
+					<tr><td>ttttttttt</td></tr>
+					<tr><th>Teaching Experience</th></tr>
+					<tr><td>tttttttt</td></tr>
+					<tr><th>Research Interests</th></tr>
+					<tr><td>Embedded Systems, Sensor Networks, Wireless Networks, and Signal Processing</td></tr>
+					<tr><th>Awords Wards &amp; Honors</th></tr>
+					<tr><td>GG<br/>GG<br/></td></tr>
+					<tr><th>Related Skills</th></tr>
+					<tr><td>GG<br/>GG<br/></td></tr>
+				</table>
+			</article>
+		</main>
+		<hr><!--Horizontal Line-->
+		<footer>
+			<nav>
+				<a href="index.html">Home</a> | 
+				<a href="about.html" class = "active">About</a> |
+				<a href="publication.html">Publication</a> |
+				<a href="portfolio.html">Portfolio</a> |
+				<a href="personal.html">Personal</a>
+			</nav>
+			<p id="copyRight">&copy; 2017 by Bo-Rong Chen</p>
+		</footer>
+	</div>
 	<script src="js/sideNavigation.js"></script>
 	<script src="js/accordion.js"></script>
+	<script src="js/myTopnav.js"></script>
 </body>
 </html>
