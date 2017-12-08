@@ -160,6 +160,10 @@ div.panel p{
 }
 
 /* --- Protfolio --- */
+.protfolio-main{
+	max-width: 1000px;
+}
+
 .protfolio-row{
 	margin: 10px -16px;
 }
@@ -267,11 +271,14 @@ div.panel p{
 	display: none;
 	height: 450px;
 	overflow: hidden;
+	background-color: #212121; /* Grey 900 */ 
 }
 
 .mySlides img{
-	width: 100%;
-	margin: -10% 0 0 0;
+	/*width: 100%;*/
+	height: 100%;
+	display: block;
+    margin: 0 auto;
 }
 
 /* Next & previous buttons */
