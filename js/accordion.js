@@ -4,7 +4,13 @@ var i;
 
 for(i=0; i<acc.length; i++) {
 	acc[i].onclick = function(){
-		this.classList.toggle("active");
+		var duration = this.value;
+		if(this.classList.toggle("active")) {
+			duration += ' -';
+		} else {
+			duration += ' +';
+		}
+		this.setAttribute('data-value', duration);
 		var panel = this.nextElementSibling;
 		if(panel.style.maxHeight) {
 			panel.style.maxHeight = null;
@@ -13,3 +19,11 @@ for(i=0; i<acc.length; i++) {
 		}
 	}
 }
+
+function init() {
+	for(i=0; i<acc.length; i++) {
+		var duration = acc[i].value + ' +';
+		acc[i].setAttribute('data-value', duration);
+	}
+}
+window.onload = init;

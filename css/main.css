@@ -136,7 +136,7 @@ button.accordion.active, button.accordion:hover{
 }
 
 button.accordion:after{
-	content: '\002B';
+	content: attr(data-value);
 	color: #777;
 	font-weight: bold;
 	float: right;
@@ -144,7 +144,7 @@ button.accordion:after{
 }
 
 button.accordion.active:after{
-	content: "\2212";
+	content: attr(data-value);
 }
 
 div.panel{
