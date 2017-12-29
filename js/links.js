@@ -37,3 +37,7 @@ function myCourseraLinks5() {
 function myOpenWrt() {
 	window.open("https://wiki.openwrt.org/");
 }
+
+function myROS() {
+	window.open("http://www.ros.org");
+}
