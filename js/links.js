@@ -41,3 +41,7 @@ function myOpenWrt() {
 function myROS() {
 	window.open("http://www.ros.org");
 }
+
+function myPega() {
+	window.open("http://cht.pegatroncorp.com/index/index/lang/en_US");
+}
