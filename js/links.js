@@ -33,6 +33,10 @@ function myCourseraLinks5() {
 	window.open("https://www.coursera.org/account/accomplishments/verify/N273VP2AX7");
 }
 
+function myCourseraLinks6() {
+	window.open("https://www.coursera.org/specializations/deep-learning");
+}
+
 /* Misc */
 function myOpenWrt() {
 	window.open("https://wiki.openwrt.org/");
