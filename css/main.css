@@ -15,7 +15,7 @@ html, body{
 body{
 	font-size: 120%;
 	margin: 0;
-	font-family: "Molengo";
+	font-family: "Roboto";
 }
 
 .content{
@@ -33,7 +33,7 @@ header{
 
 header h1{
 	color: #FFFFFF; /* White */
-	font-family: Courier, Impact, Arial;
+	/*font-family: Courier, Impact, Arial;*/
 	font-variant: small-caps;
 }
 
@@ -41,7 +41,7 @@ article p{
 	text-align: justify;
 }
 
-sup{
+li sup{
 	color: #FF9800; /* Orange */
 }
 
@@ -377,7 +377,7 @@ nav{
 	text-align: center;
 	font-variant: small-caps;
 	font-size: 120%;
-	font-family: Arial, "Time New Roman", serif;
+	/*font-family: Arial, "Time New Roman", serif;*/
 	display: none;
 }
 
@@ -391,7 +391,7 @@ nav a{
 	min-width: 140px;
 	text-decoration: none;
 	margin: 0 auto;
-	font-family: Courier, Impact, Arial;
+	/*font-family: Courier, Impact, Arial;*/
 	transition-property: background;
 	transition-duration: .5s;
 	transition-timing-function: linear;
