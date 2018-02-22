@@ -41,6 +41,10 @@ article p{
 	text-align: justify;
 }
 
+sup{
+	color: #FF9800; /* Orange */
+}
+
 /* --- Responsive Testimonials --- */
 .container{
 	border: 2px solid #ccc;
