@@ -34,6 +34,10 @@ function myCourseraLinks5() {
 }
 
 function myCourseraLinks6() {
+	window.open("https://www.coursera.org/account/accomplishments/verify/GXLW9WG4XK9B");
+}
+
+function myCourseraLinks7() {
 	window.open("https://www.coursera.org/specializations/deep-learning");
 }
 
