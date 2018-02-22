@@ -5,6 +5,7 @@
 	<title>Portfolio</title>
 	<link rel="icon" type="image/png" href="http://i.imgur.com/DpxBnQd.png" />
 	<link rel="stylesheet" href="css/main.css" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Molengo" />
 </head>
 <body>
 	<div id="mySidenav" class="sidenav">
@@ -31,18 +32,19 @@
 		</header>
 		<main>
 			<article>
-				<input type="radio" onclick="filterSelection('protfolio-all')" name="category" checked> Show all
-				<input type="radio" onclick="filterSelection('protfolio-embedded')" name="category"> Embedded System
-				<input type="radio" onclick="filterSelection('protfolio-mobile')" name="category"> Mobile Apps
-				<input type="radio" onclick="filterSelection('protfolio-misc')" name="category"> Others
-
+				<div id="myBtnContainer">
+					<button class="protfolio-btn protfolio-active" onclick="filterSelection('protfolio-all')"> Show all</button>
+					<button class="protfolio-btn" onclick="filterSelection('protfolio-embedded')"> Embedded Systems</button>
+					<button class="protfolio-btn" onclick="filterSelection('protfolio-mobile')"> Mobile Apps</button>
+					<button class="protfolio-btn" onclick="filterSelection('protfolio-misc')"> Others</button>
+				</div>
 				<!-- Protfolio Gallery Grid -->
 				<div class="protfolio-row">
 					<!-- 2017/12/29 -->
-					<div class="protfolio-column protfolio-misc">
+					<div class="protfolio-column protfolio-embedded">
 						<a href="https://github.com/bydottck13/aws_mqtt_bridge">
 							<div class="protfolio-content">
-								<img src="http://www.ros.org/wp-content/uploads/2016/05/kinetic.png" alt="aws_mqtt_bridge" style="width:100%">
+								<img src="http://www.ros.org/wp-content/uploads/2016/05/kinetic.png" alt="aws_mqtt_bridge">
 								<h4>AWS IoT x ROS</h4>
 								<p>A MQTT bridge package for ROS</p>
 							</div>
@@ -53,7 +55,7 @@
 					<div class="protfolio-column protfolio-misc">
 						<a href="https://bydottck13.github.io/">
 							<div class="protfolio-content">
-								<img src="http://www.doclicksolutions.com/img/web_training.png" alt="My Profile" style="width:100%">
+								<img src="http://www.doclicksolutions.com/img/web_training.png" alt="My Profile">
 								<h4>Personal Website</h4>
 								<p>HTML5 x CSS x JS</p>
 							</div>
@@ -64,7 +66,7 @@
 					<div class="protfolio-column protfolio-misc">
 						<a href="https://github.com/bydottck13/test-sd-bus">
 							<div class="protfolio-content">
-								<img src="https://assets-cdn.github.com/images/modules/open_graph/github-mark.png" alt="sd-bus" style="width:100%">
+								<img src="https://assets-cdn.github.com/images/modules/open_graph/github-mark.png" alt="sd-bus">
 								<h4>D-Bus</h4>
 								<p>An IPC example for Ubuntu</p>
 							</div>
@@ -75,7 +77,7 @@
 					<div class="protfolio-column protfolio-mobile">
 						<a href="https://play.google.com/store/apps/details?id=com.cybernut.busyshomeapp">
 							<div class="protfolio-content">
-								<img src="https://www.androidheadlines.com/wp-content/uploads/2017/05/Google-Play-Store-New-App-Icon.png" alt="BusysHomeApp-Android" style="width:100%">
+								<img src="https://www.androidheadlines.com/wp-content/uploads/2017/05/Google-Play-Store-New-App-Icon.png" alt="BusysHomeApp-Android">
 								<h4>BusysHomeApp-Android</h4>
 								<p>A building monitoring app</p>
 							</div>
@@ -86,18 +88,26 @@
 					<div class="protfolio-column protfolio-mobile">
 						<a href="https://appsto.re/tw/U0ALbb.i">
 							<div class="protfolio-content">
-								<img src="https://developer.apple.com/swift/images/swift-og.png" alt="BusysHomeApp-Swift" style="width:100%">
+								<img src="https://developer.apple.com/swift/images/swift-og.png" alt="BusysHomeApp-Swift">
 								<h4>BusysHomeApp-Swift</h4>
 								<p>A building monitoring app</p>
 							</div>
 						</a>
 					</div>
 
+					<div class="protfolio-column protfolio-embedded">
+						<div class="protfolio-content">
+							<img src="http://www.asrock.com/Networking/X10/fun_00_bg.jpg" alt="IoT Router">
+							<h4>ZigBee x AWS MQTT</h4>
+							<p>A project combined ZigBee and AWS IoT services based on OpenWrt</p>
+						</div>
+					</div>
+
 					<!-- 2017/01/05 -->
 					<div class="protfolio-column protfolio-mobile">
 						<a href="https://github.com/bydottck13/AndroidStudio_WiFiManager">
 							<div class="protfolio-content">
-								<img src="https://assets-cdn.github.com/images/modules/open_graph/github-mark.png" alt="WiFiManager" style="width:100%">
+								<img src="https://assets-cdn.github.com/images/modules/open_graph/github-mark.png" alt="WiFiManager">
 								<h4>WiFiManager</h4>
 								<p>An example for Android WiFi</p>
 							</div>
@@ -109,27 +119,20 @@
 					<div class="protfolio-column protfolio-misc">
 						<a href="https://bryceknowhow.blogspot.tw/">
 							<div class="protfolio-content">
-								<img src="https://www.wpoven.com/blog//wp-content/uploads/2016/12/Blogger-logo.png" alt="Technical Blog" style="width:100%">
+								<img src="https://www.wpoven.com/blog//wp-content/uploads/2016/12/Blogger-logo.png" alt="Technical Blog">
 								<h4>Technical Blog</h4>
 								<p>The records concerning my job</p>
 							</div>
 						</a>
 					</div>
-					
-					<div class="protfolio-column protfolio-embedded">
+
+					<!--<div class="protfolio-column protfolio-misc">
 						<div class="protfolio-content">
-							<img src="https://i.imgur.com/ABaEFeM.png" alt="embedded" style="width:100%">
-							<h4>Embedded System</h4>
-							<p>Loren ipsum dolor...</p>
-						</div>
-					</div>
-					<div class="protfolio-column protfolio-misc">
-						<div class="protfolio-content">
-							<img src="https://i.imgur.com/ABaEFeM.png" alt="misc" style="width:100%">
+							<img src="https://i.imgur.com/ABaEFeM.png" alt="misc">
 							<h4>Misc</h4>
 							<p>Loren ipsum dolor...</p>
 						</div>
-					</div>
+					</div>-->
 				</div>
 			</article>
 		</main>

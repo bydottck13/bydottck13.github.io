@@ -15,6 +15,7 @@ html, body{
 body{
 	font-size: 120%;
 	margin: 0;
+	font-family: "Molengo";
 }
 
 .content{
@@ -194,10 +195,34 @@ div.panel p{
 .protfolio-content{
 	background-color: white;
 	padding: 10px;
+	height: 400px;
+	overflow: hidden;
+}
+
+.protfolio-content img{
+	width: 100%;
+	height: auto;
 }
 
 .protfolio-show{
 	display: block;
+}
+
+.protfolio-btn{
+	border: none;
+	outline: none;
+	padding: 12px 16px;
+	background-color: white;
+	cursor: pointer;
+}
+
+.protfolio-btn:hover{
+	background-color: #ddd;
+}
+
+.protfolio-btn.protfolio-active{
+	background-color: #666;
+	color: white;
 }
 
 /* --- LightBox --- */
