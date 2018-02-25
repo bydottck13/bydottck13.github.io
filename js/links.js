@@ -38,6 +38,10 @@ function myCourseraLinks6() {
 }
 
 function myCourseraLinks7() {
+	window.open("https://www.coursera.org/account/accomplishments/verify/CCUBE4TR2E32");
+}
+
+function myCourseraLinks8() {
 	window.open("https://www.coursera.org/specializations/deep-learning");
 }
 
