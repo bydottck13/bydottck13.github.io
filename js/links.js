@@ -42,6 +42,10 @@ function myCourseraLinks7() {
 }
 
 function myCourseraLinks8() {
+	window.open("https://www.coursera.org/account/accomplishments/verify/MMFZTCUS7M97");
+}
+
+function myCourseraLinks9() {
 	window.open("https://www.coursera.org/specializations/deep-learning");
 }
 
