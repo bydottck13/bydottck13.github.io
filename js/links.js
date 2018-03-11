@@ -34,19 +34,7 @@ function myCourseraLinks5() {
 }
 
 function myCourseraLinks6() {
-	window.open("https://www.coursera.org/account/accomplishments/verify/GXLW9WG4XK9B");
-}
-
-function myCourseraLinks7() {
-	window.open("https://www.coursera.org/account/accomplishments/verify/CCUBE4TR2E32");
-}
-
-function myCourseraLinks8() {
-	window.open("https://www.coursera.org/account/accomplishments/verify/MMFZTCUS7M97");
-}
-
-function myCourseraLinks9() {
-	window.open("https://www.coursera.org/specializations/deep-learning");
+	window.open("https://www.coursera.org/account/accomplishments/specialization/8SPQSPDWCFFA");
 }
 
 /* Misc */
