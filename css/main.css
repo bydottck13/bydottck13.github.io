@@ -41,7 +41,7 @@ article p{
 	text-align: justify;
 }
 
-li sup, td sup{
+li sup.color, td sup.color{
 	color: #FF9800; /* Orange */
 }
 

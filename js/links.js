@@ -10,6 +10,11 @@ function myConferenceLinks1() {
 	window.open("http://ieeexplore.ieee.org/document/6932347/");
 }
 
+/* Google Scholar */
+function myGoogleScholar() {
+	window.open("https://scholar.google.com.sg/citations?user=3Az23jYAAAAJ&hl");
+}
+
 /* Patents */
 
 /* Coursera */
