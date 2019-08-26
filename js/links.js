@@ -16,6 +16,9 @@ function myGoogleScholar() {
 }
 
 /* Patents */
+function myPatentLinks1() {
+	window.open("https://twpat-simple.tipo.gov.tw/tipotwoc/tipotwkm?!!FR_I669015");
+}
 
 /* Coursera */
 function myCourseraLinks1() {
